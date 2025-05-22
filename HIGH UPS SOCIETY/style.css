@@ -1,0 +1,344 @@
+body {
+    font-family: 'Playfair Display', serif;
+    background: #f5f5f5;
+    text-align: center;
+    color: #333;
+    margin: 0;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #ddd;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.art-piece {
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+.art-piece img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    display: block;
+}
+
+.caption {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+footer {
+    background-color: #222;
+    color: #eee;
+    padding: 20px 10px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+footer a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0.8px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+p {
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
+p {
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
+p {
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
+a {
+    color: #555;
+    text-decoration: none;
+    border-bottom: 1px dashed #aaa;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #000;
+}
+
+.blog-post {
+    background: #fff;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 700px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+    border-radius: 12px;
+    text-align: left;
+}
+
+.blog-post h2 {
+    margin-top: 0;
+}
+
+.blog-post .date {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+
+/* lightbox */
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.lightbox-content {
+    background: #f5f5f500;
+    margin: 30px;
+    padding: 50px;
+    display: flex;
+    gap: 20px;
+    max-width: 90%;
+    max-height: 80%;
+    overflow: auto;
+    border-radius: 8px;
+}
+
+.lightbox-content img {
+    max-width: 400px;
+    max-height: 100%;
+    border-radius: 4px;
+}
+
+.lightbox-content .caption {
+    max-width: 400px;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+/* form */
+
+form {
+    max-width: 600px;
+    margin: 30px;
+    text-align: left;
+}
+
+input,
+textarea {
+    width: 100px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #504f4f;
+}
+
+body {
+    font-family: 'Baskerville', serif
+}
+
+h1,
+h2 {
+    font-family: Baskerville;
+}
+
+body,
+p,
+nav {
+    font-family: sans-serif;
+}
+
+.site-header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo {
+    height: 80px;
+    max-width: 100%;
+}
+
+.art-piece {
+    text-align: center;
+    max-width: 200px;
+}
+
+.caption {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+
+/* About */
+
+.about-content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.7;
+    color: #333333;
+}
+
+.about-content h2,
+.about-content h3 {
+    color: #000;
+}
+
+
+/* Contact */
+
+.contact-content {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.contact-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    align-self: flex-start;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+form button {
+    padding: 12px 24px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: #333;
+}
+
+
+/* for phones and tablets */
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+    .art-piece {
+        max-width: 90%;
+    }
+    .blog-post {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+    .lightbox-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .lightbox-content img,
+    .lightbox-content .caption {
+        max-width: 90%;
+        text-align: center;
+    }
+    form {
+        width: 100%;
+        padding: 0 10px;
+    }
+    form input,
+    form textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+    h1,
+    h2 {
+        font-size: 24px;
+    }
+}

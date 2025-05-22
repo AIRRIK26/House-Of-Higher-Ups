@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Higher Ups Society</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.google.com/specimen/Libre+Baskerville" rel="stylesheet">
+    <link rel="stylesheet" href="https://1drv.ms/u/c/25dceef8e19ffa24/EeqTQg06pXZOkUxNOHtnSUUB5XA4xsA6O_r7zKFxOeISqA">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <header class="site-header">
+        <img src="Image/Untitled Project (2).jpg" atl="The Higher Ups Society Logo" class="logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="hus.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+    </nav>
+
+
+    <h1> Society of The Higher Ups</h1>
+    <p> We are the creative Society</p>
+
+
+
+    <h2>Gallery</h2>
+
+    <div class="gallery">
+        <div class="art-piece">
+            <img src="https://i.pinimg.com/736x/28/10/45/281045ba77e29adf3062e2434d522a5b.jpg" atl="Art 1">
+            <div class="caption">Ntjaka</div>
+        </div>
+        <div class="art-piece">
+            <img src="https://i.pinimg.com/736x/ad/1a/35/ad1a351693d637cdc11d17c938ee3e63.jpg" atl="Art 2">
+            <div class="caption">Banna</div>
+        </div>
+        <div class="art-piece">
+            <img src="https://i.pinimg.com/736x/67/29/d5/6729d58492b1aeff58222326345d7f80.jpg" atl="Art 3">
+            <div class="caption">Ferrari ya Motaung</div>
+        </div>
+    </div>
+
+    <h2>Our Treasure</h2>
+    <section class="gallery">
+        <div class="art-piece">
+            <img src="https://i.pinimg.com/736x/18/3b/4c/183b4cf184bad8837568676d86287bb5.jpg" onclick="openLightbox(this)" alt="Mandela" data-caption="Nelson Mandela: Known as Madiba, a sign of respect and affection.">
+        </div>
+        <div class="art-piece">
+            <img src="https://i.pinimg.com/736x/df/30/fa/df30fafc9118e0f8f325bf125c1f5349.jpg" onclick="openLightbox(this)" alt="Zuma" data-caption="Jacob Zuma: Also called Msholozi, his traditional clan name.">
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()" style="display:none;">
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Full View">
+            <p class="caption" id="lightbox-caption"></p>
+        </div>
+    </div>
+
+
+
+
+    <footer>
+        <p>&copy;2025 The Higher Ups Society</p>
+        <p>Follow us:
+            <a href="#">Instagram</a>
+            <a href="#">X</a>
+            <a href="#">Facebook</a>
+
+        </p>
+        <p style="margin-top: 40px; font-style: italic;">Art is the only real message. Let’s stay in touch.</p>
+
+    </footer>
+
+    <!-- Click an image it makes it bigger and centered -->
+    <script>
+        function openLightbox(imgElement) {
+            const lightbox = document.getElementById("lightbox");
+            const lightboxImg = document.getElementById("lightbox-img");
+            const lightboxCaption = document.getElementById("lightbox-caption");
+
+            lightboxImg.src = imgElement.src;
+            lightboxCaption.textContent = imgElement.getAttribute("data-caption");
+
+            lightbox.style.display = "block";
+        }
+
+        function closeLightbox() {
+            document.getElementById("lightbox").style.display = "none";
+        }
+    </script>
+
+
+
+</body>
+
+</html>

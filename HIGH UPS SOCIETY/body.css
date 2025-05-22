@@ -1,0 +1,54 @@
+body {
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(to right, #fefefe, #eaeaea);
+    text-align: center;
+    color: #800020;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+    color: #222;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery {
+    display: flex;
+    /* used for rows and columns*/
+    justify-content: center;
+    flex-wrap: wrap;
+    /*used if flexible content should wrap or not.. ???*/
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.art-piece {
+    width: 200px;
+}
+
+.art-piece img {
+    width: 100%;
+    border: 3px solid #bbb;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.art-piece img.hover {
+    transform: scale(1.05);
+    border-color: #888;
+}
+
+.caption {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
+}
